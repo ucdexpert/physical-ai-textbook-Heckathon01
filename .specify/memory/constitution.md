@@ -1,55 +1,85 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report
+- Version change: 0.0.0 -> 1.0.0
+- List of modified principles: 12 principles added
+- Added sections: Constraints, Success Criteria and Deliverables
+- Removed sections: none
+- Templates requiring updates:
+- .specify/templates/plan-template.md
+- .specify/templates/spec-template.md
+- .specify/templates/tasks-template.md
+- Follow-up TODOs: none
+-->
+# AI-Native Book on Docusaurus Development and Deployment Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. AI-Native Development
+AI-native development using Claude Code as primary development partner.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Specification-Driven Approach
+Specification-driven approach for systematic content creation.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Technical Accuracy
+Technical accuracy with all code examples tested and functional.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Reader-Centric Design
+Reader-centric design for progressive learning experience.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Maintainability
+Maintainability through version control and modular structure.
 
-### [PRINCIPLE_6_NAME]
+### VI. Content Format
+Content format: Markdown/MDX files for Docusaurus compatibility.
 
+### VII. Code Quality
+Code quality: All examples must be syntactically correct and runnable.
 
-[PRINCIPLE__DESCRIPTION]
+### VIII. Documentation Structure
+Logical hierarchy with max 3 levels of sidebar nesting.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+### IX. Technical Writing
+Clear explanations for intermediate-level developers.
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+### X. Deployment
+Automated CI/CD pipeline to GitHub Pages.
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+### XI. Accessibility
+WCAG 2.1 Level AA compliance.
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### XII. Performance
+Page load times under 3 seconds.
+
+## Constraints
+
+- Platform: Docusaurus v3.x (latest stable version)
+- Hosting: GitHub Pages (free tier)
+- Tools: Spec-Kit Plus for specifications, Claude Code for implementation
+- Audience: Developers with basic JavaScript/React knowledge
+- Scope: Practical implementation focus over theoretical discussion
+- Dependencies: No external paid services required
+
+## Success Criteria and Deliverables
+
+### Success Criteria
+- Book builds without errors and deploys successfully to GitHub Pages
+- All code examples tested and functional
+- Complete navigation structure with working search functionality
+- Responsive design validated on mobile, tablet, and desktop
+- All internal and external links verified (zero 404 errors)
+- Automated deployment pipeline configured and tested
+- Clear README with setup and contribution instructions
+- Comprehensive content covering: introduction, installation, core concepts, tutorials, and troubleshooting
+- Reproducible workflow documented for AI-assisted development process
+
+### Deliverables
+- Live Docusaurus site deployed to GitHub Pages
+- Complete GitHub repository with source files and configuration
+- Collection of Spec-Kit Plus specifications used in development
+- Meta-documentation explaining the AI-native creation process
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution is the single source of truth for project principles and standards. All development activities, specifications, and reviews MUST adhere to it. Amendments require a documented proposal, review, and approval from the project owner. Any deviation must be explicitly justified and documented in an Architectural Decision Record (ADR).
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-06 | **Last Amended**: 2025-12-06

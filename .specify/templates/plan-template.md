@@ -31,7 +31,18 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- [ ] **AI-Native Development**: Is the feature being developed with Claude Code as the primary partner?
+- [ ] **Specification-Driven**: Is there a clear specification for this feature?
+- [ ] **Technical Accuracy**: Are all code examples tested and functional?
+- [ ] **Reader-Centric Design**: Is the feature designed for a progressive learning experience?
+- [ ] **Maintainability**: Is the code structured for maintainability with version control?
+- [ ] **Content Format**: Does the content adhere to Markdown/MDX format?
+- [ ] **Code Quality**: Is all code syntactically correct and runnable?
+- [ ] **Documentation Structure**: Does the documentation hierarchy respect the 3-level nesting limit?
+- [ ] **Technical Writing**: Are explanations clear for intermediate-level developers?
+- [ ] **Deployment**: Is the feature integrated with the automated CI/CD pipeline?
+- [ ] **Accessibility**: Does the feature meet WCAG 2.1 Level AA compliance?
+- [ ] **Performance**: Does the feature meet the sub-3-second page load time requirement?
 
 ## Project Structure
 

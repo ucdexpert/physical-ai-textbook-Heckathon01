@@ -1,0 +1,377 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2E5EAA; /* Robotics Blue */
+  --ifm-color-primary-dark: #29579d;
+  --ifm-color-primary-darker: #275294;
+  --ifm-color-primary-darkest: #20437b;
+  --ifm-color-primary-light: #3365b7;
+  --ifm-color-primary-lighter: #356bbe;
+  --ifm-color-primary-lightest: #3e73c7;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #3E73C7; /* Lighter Robotics Blue for dark mode */
+  --ifm-color-primary-dark: #356bbe;
+  --ifm-color-primary-darker: #3365b7;
+  --ifm-color-primary-darkest: #2e5eaa;
+  --ifm-color-primary-light: #4f80d2;
+  --ifm-color-primary-lighter: #5788d6;
+  --ifm-color-primary-lightest: #6a96e0;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Custom styles for module cards */
+.moduleCard {
+  
+  border-radius: var(--ifm-spacing-md);
+  padding: var(--ifm-spacing-lg);
+  margin-bottom: var(--ifm-spacing-md);
+  color: var(--ifm-color-white); /* Adjust text color for contrast */
+}
+
+.moduleGreen { background-color: #22C55E; }
+.modulePurple { background-color: #A855F7; }
+.moduleOrange { background-color: #F97316; }
+.moduleTeal { background-color: #14B8A6; }
+
+/* Custom Admonition Styles */
+.theme-doc-admonition.admonition-tip {
+  --ifm-color-success: #22C55E; /* Green for Tip */
+  --ifm-color-success-dark: #1FAD55;
+  --ifm-color-success-darker: #1C964C;
+  --ifm-color-success-darkest: #198043;
+  --ifm-color-success-light: #2ADF68;
+  --ifm-color-success-lighter: #34E371;
+  --ifm-color-success-lightest: #4FEF8B;
+  border-color: var(--ifm-color-success);
+}
+
+.theme-doc-admonition.admonition-warning {
+  --ifm-color-warning: #F97316; /* Orange for Warning */
+  --ifm-color-warning-dark: #E06914;
+  --ifm-color-warning-darker: #C75F12;
+  --ifm-color-warning-darkest: #AA520F;
+  --ifm-color-warning-light: #FF8526;
+  --ifm-color-warning-lighter: #FF913B;
+  --ifm-color-warning-lightest: #FFA861;
+  border-color: var(--ifm-color-warning);
+}
+
+.theme-doc-admonition.admonition-danger {
+  --ifm-color-danger: #EF4444; /* Red for Danger */
+  --ifm-color-danger-dark: #D63E3E;
+  --ifm-color-danger-darker: #BD3838;
+  --ifm-color-danger-darkest: #A43232;
+  --ifm-color-danger-light: #FF5C5C;
+  --ifm-color-danger-lighter: #FF6A6A;
+  --ifm-color-danger-lightest: #FF8C8C;
+  border-color: var(--ifm-color-danger);
+}
+
+.theme-doc-admonition.admonition-info {
+  --ifm-color-info: #3B82F6; /* Blue for Info */
+  --ifm-color-info-dark: #3575DC;
+  --ifm-color-info-darker: #2F69C3;
+  --ifm-color-info-darkest: #295EA8;
+  --ifm-color-info-light: #4A96FF;
+  --ifm-color-info-lighter: #5C9FFF;
+  --ifm-color-info-lightest: #7CB2FF;
+  border-color: var(--ifm-color-info);
+}
+
+/* Custom styles for icons/badges (conceptual, as specific icons are not provided) */
+/* These would typically involve background images or specific icon fonts */
+.icon-learning-objective::before { content: '🎯 '; }
+.icon-time-estimate::before { content: '⏱️ '; }
+.icon-hands-on-exercise::before { content: '🔧 '; }
+.icon-code-example::before { content: '💻 '; }
+.icon-ros2-node::before { content: '🤖 '; }
+.icon-simulation::before { content: '🎮 '; }
+.icon-ai-ml-component::before { content: '🧠 '; }
+.icon-video-tutorial::before { content: '📹 '; }
+
+/* Homepage Compact Header */
+.homepage-compact-header {
+  background-color: #0d47a1; /* Dark blue background */
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  max-height: 300px; /* Max height for the header */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.homepage-compact-header .hero__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.homepage-compact-header .hero__subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+}
+
+.homepage-robot-logo {
+  max-height: 100px;
+  filter: brightness(0) invert(1); /* Makes the SVG white */
+  margin-bottom: 1rem;
+}
+
+/* Fix primary & secondary buttons */
+.hero__buttons .button {
+  margin: 0 0.5rem;
+  padding: 0.75rem 1.8rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+/* Start Learning – Primary Button */
+.hero__buttons .button--lg.button--primary {
+  background-color: #1976d2 !important;
+  color: white !important;
+  border: 2px solid #1976d2 !important;
+}
+
+.hero__buttons .button--lg.button--primary:hover {
+  background-color: #0d47a1 !important;
+  border-color: #0d47a1 !important;
+  color: white !important;
+}
+
+/* View Resources – Secondary Button */
+.hero__buttons .button--lg.button--secondary {
+  background: transparent !important;
+  color: #1976d2 !important; /* Changed from #42a5f5 for consistency as per latest user prompt (first request was for #1976d2) */
+  border: 2px solid #1976d2 !important; /* Changed from #42a5f5 for consistency */
+}
+
+.hero__buttons .button--lg.button--secondary:hover {
+  background-color: #1976d2 !important;
+  color: white !important;
+  border-color: #1976d2 !important;
+}
+
+/* Extra safety for dark mode or weird themes */
+@media (prefers-color-scheme: dark) {
+  .hero__buttons .button--lg.button--secondary {
+    color: #42a5f5 !important;
+    border-color: #42a5f5 !important;
+  }
+  .hero__buttons .button--lg.button--secondary:hover {
+    background-color: #42a5f5 !important;
+    color: #000 !important;
+  }
+}
+
+
+/* Module Cards 2x2 Grid */
+.grid-layout-2x2 {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column on small screens */
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) { /* md breakpoint */
+  .grid-layout-2x2 {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+  }
+}
+
+@media (min-width: 1024px) { /* lg breakpoint (for 4 columns, if desired, but 2x2 means max 2 per row) */
+  .grid-layout-2x2 {
+    grid-template-columns: repeat(2, 1fr); /* Keep 2 columns on large screens for 2x2 visual */
+  }
+}
+
+/* Compact module cards (card-wrapper is used for .module-card in Card.js) */
+.card-wrapper {
+  height: 260px !important;
+  max-height: 260px !important;
+  padding: 1.5rem !important;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: scale(1);
+  transition: transform 0.2s ease-in-out;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+.card-wrapper:hover {
+  transform: scale(1.05);
+}
+.card-wrapper img, .card-wrapper svg { /* Targeting robot icon inside card */
+  max-height: 90px !important;
+  width: auto !important;
+}
+.card-wrapper h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.card-wrapper p {
+  font-size: 0.9rem; /* Compact description font size */
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+
+/* Watermark for cards */
+.card-watermark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%; /* Adjust size as needed */
+  height: 80%; /* Adjust size as needed */
+  opacity: 0.1;
+  pointer-events: none; /* Ensure it doesn't interfere with clicks */
+  filter: brightness(0) invert(1); /* Make it white */
+  z-index: 0; /* Behind content */
+}
+
+/* Module Card Background Colors */
+.bg-blue-600 { background-color: #2563EB; }   /* Module 1 - Blue */
+.bg-green-600 { background-color: #10B981; }  /* Module 2 - Green */
+.bg-orange-600 { background-color: #F59E0B; } /* Module 3 - Orange */
+.bg-purple-600 { background-color: #7C3AED; } /* Module 4 - Purple */
+.bg-gold-600 { background-color: #F59E0B; } /* Capstone Gold - using same as orange for simplicity if needed for flowchart */
+.bg-gray-600 { background-color: #6B7280; } /* Hardware Gray */
+
+
+/* Flowchart styles */
+.flowchart-container {
+  display: flex;
+  flex-direction: column; /* Stack vertically on small screens */
+  align-items: center;
+  gap: 1rem;
+  max-height: 400px; /* Max height for flowchart */
+  overflow-y: auto; /* Add scroll if content exceeds max height */
+}
+@media (min-width: 768px) { /* md */
+  .flowchart-container {
+    flex-direction: row; /* Horizontal on larger screens */
+    justify-content: center;
+    overflow-y: visible; /* No scroll on wider screens */
+  }
+}
+
+.flowchart-node {
+  display: block; /* Make Link fill container */
+  padding: 0.75rem 1.25rem; /* Tailwind: py-3 px-5 */
+  border-radius: 9999px; /* Tailwind: rounded-full */
+  font-weight: 600; /* Tailwind: font-semibold */
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  color: white;
+  white-space: nowrap; /* Prevent wrapping */
+}
+.flowchart-node:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.flowchart-node.flowchart-blue { background-color: #2563EB; }
+.flowchart-node.flowchart-green { background-color: #10B981; }
+.flowchart-node.flowchart-orange { background-color: #F59E0B; }
+.flowchart-node.flowchart-gold { background-color: #F59E0B; } /* Capstone */
+.flowchart-node.flowchart-purple { background-color: #7C3AED; }
+
+.flowchart-arrow {
+  width: 2rem; /* Tailwind: w-8 */
+  height: 2rem; /* Tailwind: h-8 */
+  color: #6B7280; /* Tailwind: text-gray-500 */
+  transform: rotate(90deg); /* Point down on mobile */
+}
+@media (min-width: 768px) { /* md */
+  .flowchart-arrow {
+    transform: rotate(0deg); /* Point right on larger screens */
+  }
+}
+
+/* Prerequisites Checklist styles (Compact and clean) */
+.checklist-card {
+  background-color: var(--ifm-background-color); /* Use a light background */
+  padding: 2rem;
+  border-radius: var(--ifm-border-radius);
+  box-shadow: var(--ifm-global-shadow-md);
+  max-width: 600px; /* Constrain width for a cleaner look */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Kill giant chevrons completely */
+.prerequisites-checklist svg,
+.chevron-container,
+[class*="chevron"],
+[class*="checkmark"]:not(.small-check) {
+  display: none !important;
+}
+
+/* Simple clean checklist */
+.prerequisites-checklist ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 1.5rem 0;
+}
+.prerequisites-checklist li {
+  position: relative;
+  padding-left: 2.2rem;
+  margin: 1rem 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.prerequisites-checklist li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #4caf50;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Navbar logo constraints */
+.navbar__logo {
+  max-width: 48px;
+  max-height: 48px;
+}
+
+/* Force perfect print/PDF layout */
+@media print {
+  .card-wrapper { height: 240px !important; margin: 1rem 0 !important; } /* Targeting module cards */
+  .container { max-width: 100% !important; padding: 0 2rem !important; }
+  body, html { background: white !important; }
+  .navbar, .footer { display: none !important; }
+  
+  /* Ensure text is readable */
+  h1, h2, h3, h4, h5, h6, p, li, a {
+    color: black !important;
+  }
+  a {
+    text-decoration: underline !important;
+  }
+  img, svg {
+    max-height: 90px !important;
+    width: auto !important;
+  }
+}

@@ -1,0 +1,231 @@
+import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
+
+const sidebars: SidebarsConfig = {
+  physicalAiSidebar: [
+    {
+      type: 'category',
+      label: 'Getting Started',
+      link: { type: 'doc', id: 'getting-started/introduction-to-physical-ai' },
+      collapsed: false,
+      items: [
+        'getting-started/introduction-to-physical-ai',
+        'getting-started/why-physical-ai-matters',
+        'getting-started/embodied-intelligence-fundamentals',
+        'getting-started/humanoid-robotics-landscape',
+        'getting-started/sensor-systems-overview',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Module 1: The Robotic Nervous System (ROS 2)',
+      link: { type: 'doc', id: 'module-1-ros2/week-3/ros2-architecture' },
+      collapsed: true,
+      items: [
+        {
+          type: 'category',
+          label: 'Week 3: ROS 2 Foundations',
+          link: { type: 'doc', id: 'module-1-ros2/week-3/ros2-architecture' },
+          collapsed: true,
+          items: [
+            'module-1-ros2/week-3/ros2-architecture',
+            'module-1-ros2/week-3/nodes-fundamentals',
+            'module-1-ros2/week-3/topics-and-publishers',
+            'module-1-ros2/week-3/subscribers-and-callbacks',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Week 4: Building with ROS 2',
+          link: { type: 'doc', id: 'module-1-ros2/week-4/services-and-clients' },
+          collapsed: true,
+          items: [
+            'module-1-ros2/week-4/services-and-clients',
+            'module-1-ros2/week-4/actions-for-long-tasks',
+            'module-1-ros2/week-4/building-ros2-packages',
+            'module-1-ros2/week-4/working-with-rclpy',
+            'module-1-ros2/week-4/bridging-python-agents-to-ros',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Week 5: Advanced ROS 2',
+          link: { type: 'doc', id: 'module-1-ros2/week-5/launch-files' },
+          collapsed: true,
+          items: [
+            'module-1-ros2/week-5/launch-files',
+            'module-1-ros2/week-5/parameter-management',
+            'module-1-ros2/week-5/urdf-for-humanoids',
+            'module-1-ros2/week-5/ros2-best-practices',
+          ],
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Module 2: The Digital Twin (Gazebo & Unity)',
+      link: { type: 'doc', id: 'module-2-digital-twin/week-6/introduction-to-simulation' },
+      collapsed: true,
+      items: [
+        {
+          type: 'category',
+          label: 'Week 6: Gazebo Simulation',
+          link: { type: 'doc', id: 'module-2-digital-twin/week-6/introduction-to-simulation' },
+          collapsed: true,
+          items: [
+            'module-2-digital-twin/week-6/introduction-to-simulation',
+            'module-2-digital-twin/week-6/gazebo-environment-setup',
+            'module-2-digital-twin/week-6/urdf-and-sdf-formats',
+            'module-2-digital-twin/week-6/physics-simulation',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Week 7: Advanced Simulation',
+          link: { type: 'doc', id: 'module-2-digital-twin/week-7/sensor-simulation-lidar' },
+          collapsed: true,
+          items: [
+            'module-2-digital-twin/week-7/sensor-simulation-lidar',
+            'module-2-digital-twin/week-7/unity-for-high-fidelity-rendering',
+            'module-2-digital-twin/week-7/human-robot-interaction-in-unity',
+            'module-2-digital-twin/week-7/integrating-gazebo-with-ros2',
+          ],
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Module 3: The AI-Robot Brain (NVIDIA Isaac)',
+      link: { type: 'doc', id: 'module-3-isaac/week-8/nvidia-isaac-overview' },
+      collapsed: true,
+      items: [
+        {
+          type: 'category',
+          label: 'Week 8: Isaac Platform Introduction',
+          link: { type: 'doc', id: 'module-3-isaac/week-8/nvidia-isaac-overview' },
+          collapsed: true,
+          items: [
+            'module-3-isaac/week-8/nvidia-isaac-overview',
+            'module-3-isaac/week-8/isaac-sim-setup',
+            'module-3-isaac/week-8/photorealistic-simulation',
+            'module-3-isaac/week-8/isaac-ros-bridge',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Week 9: Perception and Navigation',
+          link: { type: 'doc', id: 'module-3-isaac/week-9/synthetic-data-generation' },
+          collapsed: true,
+          items: [
+            'module-3-isaac/week-9/synthetic-data-generation',
+            'module-3-isaac/week-9/isaac-ros-packages',
+            'module-3-isaac/week-9/visual-slam',
+            'module-3-isaac/week-9/ai-powered-perception',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Week 10: Path Planning and Learning',
+          link: { type: 'doc', id: 'module-3-isaac/week-10/nav2-introduction' },
+          collapsed: true,
+          items: [
+            'module-3-isaac/week-10/nav2-introduction',
+            'module-3-isaac/week-10/path-planning-algorithms',
+            'module-3-isaac/week-10/reinforcement-learning',
+            'module-3-isaac/week-10/sim-to-real-transfer',
+          ],
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Module 4: Vision-Language-Action (VLA)',
+      link: { type: 'doc', id: 'module-4-vla/week-11/humanoid-kinematics' },
+      collapsed: true,
+      items: [
+        {
+          type: 'category',
+          label: 'Week 11: Humanoid Development',
+          link: { type: 'doc', id: 'module-4-vla/week-11/humanoid-kinematics' },
+          collapsed: true,
+          items: [
+            'module-4-vla/week-11/humanoid-kinematics',
+            'module-4-vla/week-11/humanoid-dynamics',
+            'module-4-vla/week-11/bipedal-locomotion',
+            'module-4-vla/week-11/balance-control',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Week 12: Natural Interaction',
+          link: { type: 'doc', id: 'module-4-vla/week-12/manipulation-fundamentals' },
+          collapsed: true,
+          items: [
+            'module-4-vla/week-12/manipulation-fundamentals',
+            'module-4-vla/week-12/humanoid-hands',
+            'module-4-vla/week-12/natural-interaction-design',
+            'module-4-vla/week-12/multi-modal-sensing',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Week 13: Conversational Robotics',
+          link: { type: 'doc', id: 'module-4-vla/week-13/voice-to-action-pipeline' },
+          collapsed: true,
+          items: [
+            'module-4-vla/week-13/voice-to-action-pipeline',
+            'module-4-vla/week-13/whisper-integration',
+            'module-4-vla/week-13/gpt-for-planning',
+            'module-4-vla/week-13/cognitive-planning',
+            'module-4-vla/week-13/nlp-to-ros2-actions',
+            'module-4-vla/week-13/multi-modal-interaction',
+          ],
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Hardware & Lab Setup',
+      link: { type: 'doc', id: 'hardware/hardware-requirements-overview' },
+      collapsed: true,
+      items: [
+        'hardware/hardware-requirements-overview',
+        'hardware/digital-twin-workstation',
+        'hardware/jetson-edge-kit',
+        'hardware/sensor-systems-setup',
+        'hardware/robot-hardware-options',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Capstone Project: The Autonomous Humanoid',
+      link: { type: 'doc', id: 'capstone/capstone-overview' },
+      collapsed: true,
+      items: [
+        'capstone/capstone-overview',
+        'capstone/project-architecture',
+        'capstone/voice-command-integration',
+        'capstone/path-planning-integration',
+        'capstone/obstacle-avoidance',
+        'capstone/object-identification',
+        'capstone/object-manipulation',
+        'capstone/system-integration',
+        'capstone/deployment-and-testing',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Resources',
+      link: { type: 'doc', id: 'resources/glossary' },
+      collapsed: true,
+      items: [
+        'resources/glossary',
+        'resources/troubleshooting',
+        'resources/faq',
+        'resources/additional-resources',
+        'resources/community-guidelines',
+      ],
+    },
+  ],
+};
+
+export default sidebars;
